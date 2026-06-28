@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>CYBER TEAM CHAT</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="login">
+
+<h1>CYBER TEAM</h1>
+
+<input id="username" placeholder="اسم المستخدم">
+
+<select id="room">
+
+<option value="101">ROOM 101</option>
+<option value="102">ROOM 102</option>
+<option value="103">ROOM 103</option>
+<option value="104">ROOM 104</option>
+<option value="105">ROOM 105</option>
+<option value="106">ROOM 106</option>
+<option value="107">ROOM 107</option>
+<option value="108">ROOM 108</option>
+<option value="109">ROOM 109</option>
+<option value="110">ROOM 110</option>
+<option value="111">ROOM 111</option>
+
+</select>
+
+<button onclick="join()">دخول</button>
+
+</div>
+
+<div id="chat" class="chat">
+
+<div class="top">
+<span id="roomName"></span>
+</div>
+
+<div id="messages" class="messages"></div>
+
+<div class="bottom">
+
+<input id="msg" placeholder="اكتب الرسالة">
+
+<button onclick="send()">إرسال</button>
+
+</div>
+
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="client.js"></script>
+
+</body>
+</html>
